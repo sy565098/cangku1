@@ -1,0 +1,72 @@
+#### 表单是用来手机信息，比如注册，登录，发送评论反馈，购买商品等。
+
+##### 1.所有HTML表单都以一个<form>元素开始
+
+​	如<form action="save.php" method="post"></form>
+
+action属性：表示表单要提交到的后台程序的网址
+
+method属性：表示表单提交的方式，有get、post。
+
+##### 单行文本框  text
+
+使用type属性值被设置为text的<input>元素可以创建单行文本框，它是一个单标签。
+
+<input type="text">
+
+属性值有value ：表示已经填写默认的值
+
+<input type=text  value	="123">
+
+placeholder属性表示提示文本，将以浅色文字卸载文本框中，并不是文本框中的值
+
+<input type=text  placeholder="请输入姓名">
+
+disabled属性表示用户不能与元素交互，”锁死“
+
+##### 单选按钮  radio
+
+  1.使用type属性值被设置为radio的<input>元素可以创建单选按钮
+
+  ​		<input type="radio">
+
+  2.互斥的单选按钮应该设置它们的name为相同值
+
+  属性值有：
+
+  value ：单选按钮要有value属性值，向服务器提交的就是value。
+
+  checked：加上checked属性，表示默认被选中。
+
+    label标签   
+
+- 用来将文字和单选按钮进行绑定，用户单机文字的时候也视为点击了单选按钮。
+
+```
+<label>
+	<input type="radio">男
+</label>	
+<label>
+	<input type="radio">女
+</label>	
+```
+
+- HTML4时代，label标签是通过for属性和单选按钮的id属性进行绑定
+
+  ```
+  <input type="radio" id="nan">
+  <label for="nan">男</label>
+  ```
+
+  
+#### 复选框   checkbox
+
+使用type属性值被设置为checkbox的<input>元素可以创建复选框
+
+```
+<input type ="checkbox">
+```
+
+同组复选框应该设置它们的name值为相同
+
+复选框要有value属性值，向服务器提交的就是value值
